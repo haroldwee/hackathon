@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Interactive Map</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Monaco, Times, serif;
+}
+
+
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.row {
+    background-color: #f1f1f1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.column1 {
+  float: left;
+  width: 70%;
+  padding: 0px;
+  position: relative;
+  left: 30px
+}
+
+.column2 {
+  float: left;
+  width: 30%;
+  padding: 0px;
+  position: relative;
+  right: 100px
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Catracker.sg</h1>
+  <p>Singapore's first Cat Tracker</p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="mappage.html">Interactive Map</a>
+</div>
+
+<div class="row">
+  <div class="column1">
+
+    <iframe src="map.html" width="1000" height="1000"></iframe>
+    
+  </div>
+  
+  <div class="column2">
+    <h2>Interactive Map</h2>
+    <p>Navigate our interactive map to find where our community cats now!</p>
+    <p>Page will update cat whereabouts approx. every 5min</p>
+    <img src="images/mapcat.webp">
+  </div>
+</div>
+
+</body>
+</html>
+

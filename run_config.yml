@@ -1,0 +1,11 @@
+nodes:
+- input.recorded:
+    input_dir : 'input/data2'
+- model.yolo:
+    detect_ids: [15]
+- dabble.bbox_count
+- draw.bbox
+- draw.legend
+- output.csv_writer:
+    file_path: "PeekingDuck/data/stats.csv"
+    stats_to_track : ['filename', 'bbox_labels']
